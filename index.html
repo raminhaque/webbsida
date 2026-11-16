@@ -12,17 +12,39 @@
 </head>
 <body>
     <header>
-  <h1>Ramins sida</h1>
-  <nav>
-    <a href="#om">Om mig</a> |
-    <a href="#lista">Listor</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Ramins sida</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#meny" aria-controls="meny" aria-expanded="false" aria-label="Visa meny">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="meny">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#om">Om mig</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lista">Listor</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Välkommen!</h1>
+    <p class="lead">Jag heter Ramin och studerar interaktionsdesign på MDU.</p>
+    <hr class="my-4">
+    <p>Här visar jag vad jag lär mig om HTML, CSS och Bootstrap.</p>
+    <a class="btn btn-primary btn-lg" href="#om" role="button">Läs mer</a>
+  </div>
+</div>
 
 <main class="container">
   <section id="om">
     <h2>Om mig</h2>
     <p style="color: blue">Jag studerar <strong>interaktionsdesign</strong> på <em>MDU</em>.</p>
+    <p class="lead text-success">Jag gillar att bygga webbsidor som är enkla att använda.</p>
+<p class="text-uppercase font-weight-bold text-danger">Stilklasser är king!</p>
+<blockquote class="blockquote text-center bg-light p-3">
+  <p class="mb-0">Med Bootstrap behöver man nästan inte skriva egen CSS.</p>
+  <footer class="blockquote-footer">Ramin Haque</footer>
+</blockquote>
     
 
   <hr>
@@ -45,7 +67,33 @@
   </div>
 </section>
 
-  <h3>Tabell</h3>
+<section id="kort" class="my-4">
+  <h2>Det jag har lärt mig</h2>
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Git</h5>
+        <p class="card-text">Jag kan spara och ladda upp kod med git add, commit och push.</p>
+      </div>
+      <div class="card-footer"><small class="text-muted">Tisdag</small></div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">VS Code</h5>
+        <p class="card-text">Jag kan skriva HTML och CSS i en riktig kodeditor.</p>
+      </div>
+      <div class="card-footer"><small class="text-muted">Torsdag</small></div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Bootstrap</h5>
+        <p class="card-text">Jag kan bygga snygga sidor snabbt med färdiga klasser.</p>
+      </div>
+      <div class="card-footer"><small class="text-muted">Måndag</small></div>
+    </div>
+  </div>
+</section>  
+<h3>Tabell</h3>
  <table class="table table-striped">
     <tr><th>Dag</th><th>Moment</th></tr>
     <tr><td>Tisdag</td><td>Git</td></tr>
